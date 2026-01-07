@@ -18,7 +18,7 @@ if (-not $IsAdmin) {
 # =========================
 $CollectLogsPath = "C:\Scripts\Progetto_8\Collect-Logs.ps1"
 $AnalyzeLogsPath = "C:\Scripts\Progetto_8\Analyze-Logs.ps1"
-$DashboardHTMLPath = "C:\Scripts\Progetto_8\dashboard.html"
+$DashboardHTMLPath = "C:\Logs\dashboard.html"
 $LogFolder = "C:\Logs"
 
 # =========================

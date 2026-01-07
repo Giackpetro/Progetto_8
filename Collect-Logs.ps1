@@ -29,12 +29,12 @@ foreach ($log in $Logs) {
         LogName   = $log
         Level     = 1,2,3
         StartTime = $StartTime
-    } |
+    } -ErrorAction SilentlyContinue |
     Select-Object TimeCreated, Id, LevelDisplayName, ProviderName, Message |
     ConvertTo-Json -Depth 4 |
     Out-File $File
 
-    Write-Host "Log $log salvato in $File"
+    Write-Host "Log $log raccolto in $File"
 
 } catch {
     $err = $_
